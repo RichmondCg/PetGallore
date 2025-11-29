@@ -1,15 +1,12 @@
 import React from 'react'
-
+import Navigation from './Components/Navigation.jsx'
+import Hero from './Components/Hero.jsx'
 function App() {
   return (
-    <main>
-      <div className="pattern" />
-      <div className="pattern">
-        <header>
-          <h1>Pet<span className="text-gradient">Gallore</span></h1>
-        </header>
-      </div>
-    </main>
+    <>
+    <Navigation />
+    <Hero />
+    </>
   )
 }
 
