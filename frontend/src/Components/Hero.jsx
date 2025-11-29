@@ -174,11 +174,8 @@ function Hero() {
                 </div>
 
                 <p className="mt-6 text-gray-100 leading-relaxed text-lg">
-                  Laccumsan et iusto odio dignissim qui blandit praesent
-                  luptatum zzril delenit augue duis dolore te feugait nulla
-                  facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse.
+                  The best vet clinic! My dog’s grooming and vaccination have
+                  never been easier.
                 </p>
 
                 <div className="mt-6 flex items-center space-x-2">
@@ -253,11 +250,8 @@ function Hero() {
                 </div>
 
                 <p className="mt-6 text-gray-100 leading-relaxed text-lg">
-                  Laccumsan et iusto odio dignissim qui blandit praesent
-                  luptatum zzril delenit augue duis dolore te feugait nulla
-                  facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse.
+                  Love the online history feature. I can see all my cat’s past
+                  check-ups!
                 </p>
 
                 <div className="mt-6 flex items-center space-x-2">
@@ -300,6 +294,29 @@ function Hero() {
           </div>
         </div>
       </section>
+      <footer className="flex justify-between bg-[#CF4B00] text-white py-8 px-6 mt-12 rounded-t-3xl">
+        <div className="mb-6">
+          <h3 className="text-2xl mb-2">PetGalore</h3>
+          <p>Your trusted partner in pet care.</p>
+          <p className="text-center mt-6 text-sm text-white/80">
+            Copyright © 2025 PetGalore. All rights reserved.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Visit Our Clinic</h3>
+          <p>Address: Laur, Nueva Ecija</p>
+          <p>Contact Number: (Number)</p>
+          <p>Email: contact@petgalore.com</p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Business Hours</h3>
+          <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+          <p>Saturday: 9:00 AM - 4:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </footer>
     </>
   );
 }
