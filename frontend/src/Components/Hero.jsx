@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaStethoscope,
   FaSyringe,
@@ -12,7 +13,15 @@ function Hero() {
   return (
     <>
       <section className="h-[75vh] flex items-center">
-        <div className="container mx-auto text-center">
+        <div className="relative mx-auto text-center">
+          <FaPaw
+            size={200}
+            className="absolute -right-40 -top-30 text-[#FFEDD5] opacity-100 rotate-40 -z-10"
+          />
+          <FaPaw
+            size={200}
+            className="absolute -left-40 -bottom-35 text-[#FFEDD5] opacity-100 rotate-320 -z-10"
+          />
           <h1 className="text-6xl font-extrabold mb-4">
             Welcome to <span className="text-[#CF4B00]">PetGalore</span>
           </h1>
@@ -22,12 +31,12 @@ function Hero() {
             <span className="text-[#CF4B00]">families.</span> Compassionate{" "}
             <span className="text-[#CF4B00]">care.</span>
           </p>
-          <a
-            href="/booking"
+          <Link
+            to="/booking"
             className="bg-[#CF4B00] text-white px-6 py-3 rounded-full hover:bg-[#a03a00] transition duration-300"
           >
             Book an Appointment
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -107,7 +116,7 @@ function Hero() {
           </p>
         </div>
         <table className="container mx-auto mt-6 text-lg border-separate border-spacing-y-3">
-          <tr className="bg-white rounded-lg p-4 shadow-md h-18">
+          <tr className="bg-white rounded-lg p-4 shadow-md h-18 hover:scale-105 transition-transform">
             <td className="p-4 text-xl">
               🐶 Experienced veterinarians and staff
             </td>
@@ -294,8 +303,9 @@ function Hero() {
           </div>
         </div>
       </section>
+
       <footer className="flex justify-between bg-[#CF4B00] text-white py-8 px-6 mt-12 rounded-t-3xl">
-        <div className="mb-6">
+        <div className="mb-6" id="contact">
           <h3 className="text-2xl mb-2">PetGalore</h3>
           <p>Your trusted partner in pet care.</p>
           <p className="text-center mt-6 text-sm text-white/80">
