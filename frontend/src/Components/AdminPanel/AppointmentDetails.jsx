@@ -1,12 +1,18 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import { FaExclamationTriangle } from "react-icons/fa";
+import { useParams, useNavigate } from "react-router-dom";
+import { FaExclamationTriangle, FaArrowLeft } from "react-icons/fa";
 import appointments from "../../MockDatas/appointmentsData.js";
 function AppointmentDetails() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const appointment = appointments.find((a) => a.id === parseInt(id));
   return (
     <>
+      <FaArrowLeft
+        className="cursor-pointer m-4"
+        size={20}
+        onClick={() => navigate("/admin-panel")}
+      />
       <section className="flex justify-center items-center mt-4 mb-4">
         <div className="p-8 bg-white rounded-lg shadow-md w-[98%] h-full">
           <div className="flex items-center space-x-4 mb-4">
@@ -72,32 +78,28 @@ function AppointmentDetails() {
               </p>
             </div>
           </div>
-          <div className="mt-6">
-            <h3 className="text-2xl my-6 text-[#CF4B00] font-bold">
-              Appointment Details
-            </h3>
-            <p>
-              Services: Services: <span>Grooming, Vaccination</span>
-            </p>
-            <p>
-              Notes: <span>Allergic to certain shampoos</span>
-            </p>
-            <h3 className="text-2xl my-6 text-[#CF4B00] font-bold">
-              Appointment Schedule
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div>
-                <p className="font-semibold">Preferred Date</p>
-                <div className="flex justify-center items-center p-8 bg-gray-100 rounded-md text-xl font-semibold">
-                  June 25, 2024
-                </div>
-              </div>
-              <div>
-                <p className="font-semibold">Preferred Time</p>
-                <div className="flex justify-center items-center p-8 bg-gray-100 rounded-md text-xl font-semibold">
-                  8:00 am
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h3 className="text-2xl my-6 text-[#CF4B00] font-bold">
+                Appointment Details
+              </h3>
+              <p>
+                Services: <span>Grooming, Vaccination</span>
+              </p>
+              <p>
+                Notes: <span>Allergic to certain shampoos</span>
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl my-6 text-[#CF4B00] font-bold">
+                Appointment Schedule
+              </h3>
+              <p>
+                Preferred Date: <span>June 15, 2024</span>
+              </p>
+              <p>
+                Preferred Time: <span>10:00 AM</span>
+              </p>
             </div>
           </div>
         </div>
