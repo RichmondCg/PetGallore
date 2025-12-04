@@ -13,6 +13,7 @@ import Contact from "./Pages/Contact.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import Login from "./Pages/Login.jsx";
 import AdminPanel from "./Pages/AdminPages/AdminPanel.jsx";
+import AppointmentDetails from "./Components/AdminPanel/AppointmentDetails.jsx";
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function AppContent() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin-panel/*" element={<AdminPanel />} />
+          <Route
+            path="/appointment-details/:id"
+            element={<AppointmentDetails />}
+          />
           <Route
             path="*"
             element={

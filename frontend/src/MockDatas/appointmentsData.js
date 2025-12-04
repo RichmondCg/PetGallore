@@ -1,0 +1,68 @@
+const appointments = [
+  {
+    id: 1,
+    name: "Bella",
+    species: "Dog",
+    services: ["Grooming", "Vaccination"],
+    time: "2025-12-10 09:00",
+    status: "Confirmed",
+  },
+  {
+    id: 2,
+    name: "Milo",
+    species: "Cat",
+    services: ["Check-up", "Vaccination"],
+    time: "2025-12-04 10:30",
+    status: "Pending",
+  },
+  {
+    id: 3,
+    name: "Luna",
+    species: "Dog",
+    services: ["Dental Cleaning"],
+    time: "2025-12-04 11:00",
+    status: "Confirmed",
+  },
+  {
+    id: 4,
+    name: "Oliver",
+    species: "Rabbit",
+    services: ["Nail Trimming"],
+    time: "2025-12-04 13:00",
+    status: "Cancelled",
+  },
+  {
+    id: 5,
+    name: "Charlie",
+    species: "Cat",
+    services: ["Check-up"],
+    time: "2025-12-04 14:30",
+    status: "Pending",
+  },
+  {
+    id: 6,
+    name: "Lucy",
+    species: "Dog",
+    services: ["Grooming"],
+    time: "2025-12-04 15:00",
+    status: "Confirmed",
+  },
+  {
+    id: 7,
+    name: "Max",
+    species: "Dog",
+    services: ["Check-up"],
+    time: "2025-12-05 09:30",
+    status: "Pending",
+  },
+  {
+    id: 8,
+    name: "Daisy",
+    species: "Cat",
+    services: ["Vaccination"],
+    time: "2025-12-05 11:15",
+    status: "Confirmed",
+  },
+];
+
+export default appointments;
